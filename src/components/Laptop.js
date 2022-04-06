@@ -3,6 +3,7 @@ const Laptop = () => {
   return (
     <section className="content">
         <div className="max-content laptop">
+            <img className="laptop__image-mobile" src="/images/illustration-laptop-mobile.svg" alt="laptop" />
             <img className="laptop__image" src="/images/illustration-laptop-desktop.svg" alt="laptop" />
             <div className="laptop__contents">
                 <article>

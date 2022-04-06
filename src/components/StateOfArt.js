@@ -3,8 +3,8 @@ const StateOfArt = () => {
   return (
     <section className="content state--bg">
         <div className="max-content state">
+            <img className="state__phone" src="/images/illustration-phones.svg" alt="editor mobile" />
             <div className="state__image">
-                <img className="state__phone" src="/images/illustration-phones.svg" alt="editor mobile" />
                 <img className="state__circle" src="/images/bg-pattern-circles.svg" alt="circle" />
             </div>
             <article className="state__article">

@@ -1,16 +1,21 @@
 import { useState } from 'react';
+import Menu from './Menu';
 
 const Navbar = () => {
 
   const [product,setProduct] = useState(false);
   const [company,setCompany] = useState(false); 
   const [connect,setConnect]= useState(false);
+  const [showMenu,setShowMenu] = useState(false);
     
   return (
     <nav className="content">
         <div className="max-content navbar">
+            {/* Show Menu */}
+            { showMenu && <Menu /> }
             <div className="navbar__navs">
                 <img className="navbar__logo" src="/images/logo.svg" alt="logo" />
+                { showMenu ? <img onClick={() => setShowMenu(!showMenu)} className="navbar__menu" src='/images/icon-close.svg' alt="close" /> : <img onClick={() => setShowMenu(!showMenu)} className="navbar__menu" src='/images/icon-hamburger.svg' alt="burger" /> }
                 <ul className="navbar__btns">
                     <li onMouseEnter={() => setProduct(true)} onMouseLeave={() => setProduct(false)} className="nav__btn">
                         { !product ? 

@@ -4,6 +4,9 @@ const Intro = () => {
     <section className="content intro--container">
         <div className="max-content intro">
             <h1 className="intro__title">Designed for the future</h1>
+            <div className="intro__image-mobile">
+                    <img src="/images/illustration-editor-mobile.svg" alt="mobile editor" />
+                </div>
             <div className="intro__content">
                 <div className="intro__articles">
                     <article>
